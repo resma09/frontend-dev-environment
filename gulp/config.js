@@ -35,6 +35,10 @@ module.exports = {
         }
 	},
 
+	autoprefixer: {
+	    browsers: ['last 4 versions']
+	},
+
 	css: {
 		// srtip css comments options
         stripCommentsOptions: {
