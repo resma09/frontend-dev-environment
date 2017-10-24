@@ -17,6 +17,8 @@ module.exports = function(gulp, $, path, config) {
 				config.sass.options
 				))
 
+			.pipe( $.autoprefixer( config.sass.autoprefixer ))
+
 			// write sourcemaps
 			.pipe($.sourcemaps.write('./_maps'))
 
