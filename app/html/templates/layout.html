@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Example</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body class="body">
-	{% block content %}{% endblock %}
-	<footer class="page-footer">
-		Page Footer
-	</footer>
-</body>
-</html>
+<!-- Import Header.html -->
+
+{% include 'header.html' %}
+
+{% block content %} 
+	<!-- Content for other pages goes inside the block content -->
+{% endblock %}
+
+
+<!-- Import Footer.html -->
+{% include "footer.html" %}
