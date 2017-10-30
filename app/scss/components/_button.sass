@@ -1,4 +1,11 @@
 .button 
 	background-color: $primary
-	display: flex
-	padding: 16px 24px
+	display: inline-flex
+	text-decoration: none
+	color: $white
+	border-radius: 2px
+	padding: 8px 24px
+	transition: background-color 300ms
+
+	&:hover 
+		background-color: darken($primary, 5%)
